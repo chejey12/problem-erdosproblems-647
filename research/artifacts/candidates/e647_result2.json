@@ -1,0 +1,20 @@
+{
+ "experiment": "erdosproblems-647 extended search to 2M",
+ "limit": 2000000,
+ "solutions": [
+  2,
+  3,
+  4,
+  5,
+  6,
+  8,
+  10,
+  12,
+  24
+ ],
+ "largest": 24,
+ "max_gap_running_max_minus_n": 287,
+ "note": "No n > 24 found up to 2,000,000. gap = running_max - n grows slowly; supports conjecture that 24 is the last solution (negative answer to the open question). A proof requires showing gap > 2 for all n > 24.",
+ "generated_at": "2026-09-17T05:55:33.535586+00:00",
+ "claim_status": "candidate_numeric_check_only"
+}

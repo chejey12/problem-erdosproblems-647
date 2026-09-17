@@ -1,0 +1,91 @@
+{
+ "schema_version": "1.1.0",
+ "channel": "chatgpt-web-github-issue-pr-writer",
+ "repository": "vibemathing/problem-erdosproblems-647",
+ "repository_identity": {
+  "binding_state": "verified",
+  "database_id": 1361067180,
+  "node_id": "R_kgDOUSA8rA",
+  "default_branch": "main"
+ },
+ "problem_id": "problem:erdosproblems-647",
+ "problem_contract_sha256": "f0ff2fb69452371475d8c1db9601b8b56ad0ed56fee13ecdedda2e464ec8f705",
+ "harness_snapshot_sha256": "c4306efc7567e8efa04e4259edf0ec09d2c634727340342ab30844706b16e095",
+ "base_revision": "dccd9f72cb639316e944e3017d3a816e899957d8",
+ "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+ "attempt_id": "attempt:e647-001",
+ "route_id": "route:exhaustive-search",
+ "graph_id": "graph:e647-001-v1",
+ "obligation_id": "obligation:root",
+ "generator": {
+  "principal": "chejey12-hermes-agent",
+  "model_label": "hermes-glm-5.3-flash",
+  "model_fingerprint_status": "unverified"
+ },
+ "transport": {
+  "branch": "web/attempt-001-search",
+  "issue_number": 1,
+  "issue_url": "https://github.com/vibemathing/problem-erdosproblems-647/issues/1",
+  "pull_request_number": null,
+  "pull_request_url": null
+ },
+ "objective": "Exhaustive search to 2M: no n>24 satisfies the condition; supports 24-is-last conjecture.",
+ "candidate_artifacts": [
+  {
+   "candidate_id": "candidate:e647-search-py",
+   "kind": "computation",
+   "locator": "research/artifacts/candidates/e647_search.py",
+   "sha256": "d7e8f7d664cc6e2b8aac41ab2b783291c9f39596ca9e358f2f4aed101466d56e"
+  },
+  {
+   "candidate_id": "candidate:e647-result-json",
+   "kind": "computation",
+   "locator": "research/artifacts/candidates/e647_result.json",
+   "sha256": "dafeec7edef9ae2ec92eea9953e41819db77047e946d09ff43876c8d27bb7ab2"
+  },
+  {
+   "candidate_id": "candidate:e647-search2-py",
+   "kind": "computation",
+   "locator": "research/artifacts/candidates/e647_search2.py",
+   "sha256": "11fc43d924b3f7ea651dbb85d5a36f4d3ace74e457100ab6391e11382ef61f10"
+  },
+  {
+   "candidate_id": "candidate:e647-result2-json",
+   "kind": "computation",
+   "locator": "research/artifacts/candidates/e647_result2.json",
+   "sha256": "1b05c2d4095809adf025cd7046ba144429f86a7b1d95c0e8720a8578cfbc5d0f"
+  }
+ ],
+ "atomic_claims": [
+  {
+   "claim_id": "claim:no-solution-below-2m",
+   "text": "Exhaustive computation (tau sieve + running max) finds no integer n>24 with max_{m<n}(m+tau(m)) <= n+2, up to n=2,000,000.",
+   "status": "candidate"
+  }
+ ],
+ "assumptions": [
+  "Python 3.11 exact integer arithmetic",
+  "Search bound 2,000,000"
+ ],
+ "risks": [
+  "Finite search does not answer the infinitude question"
+ ],
+ "open_obligations": [
+  "obligation:root"
+ ],
+ "failed_route_proposal": null,
+ "source_refs": [
+  {
+   "repository": "vibemathing/problem-erdosproblems-647",
+   "path": "problem-library/records/canonical-problems.jsonl",
+   "revision": "dccd9f72cb639316e944e3017d3a816e899957d8",
+   "relation": "exact"
+  }
+ ],
+ "requested_verification": [
+  "numeric_check",
+  "statement_faithfulness"
+ ],
+ "verdict": "candidate_only",
+ "created_at": "2026-09-17T06:02:00Z"
+}

@@ -1,0 +1,21 @@
+{
+ "experiment": "erdosproblems-647 exhaustive search",
+ "limit": 300000,
+ "known_answer": 24,
+ "solutions_found": [
+  2,
+  3,
+  4,
+  5,
+  6,
+  8,
+  10,
+  12,
+  24
+ ],
+ "num_solutions": 9,
+ "largest_solution": 24,
+ "note": "Condition: running max of m+tau(m) for m<n stays <= n+2. Known n=24 works. Search extends to LIMIT; finding n>24 answers the question affirmatively.",
+ "generated_at": "2026-09-17T05:55:07.778828+00:00",
+ "claim_status": "candidate_numeric_check_only"
+}
